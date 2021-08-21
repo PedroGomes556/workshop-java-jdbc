@@ -46,7 +46,7 @@ public class DepartmentListController implements Initializable {
 	
 	@FXML
 	public void onBtNewAction(ActionEvent event) {
-		Stage parentStage = Utils.(event);
+		Stage parentStage = Utils.currentStage(event);
 		createDialogForm("/gui/DepartmentForm.fxml", parentStage);
 	}
 	
